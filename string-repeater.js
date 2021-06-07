@@ -1,10 +1,9 @@
 const prompt = require("prompt-sync")();
 
-let string = prompt("Enter a string: ");
+const string = prompt("Enter a string: ");
+let repeatedString = string;
 
-console.log(string);
-
-while (string.length <= 10) {
-	string = string + string;
-	console.log(string);
+while (repeatedString.length <= 10) {
+	console.log(repeatedString);
+    repeatedString =  repeatedString + string;
 }
